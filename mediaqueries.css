@@ -69,11 +69,24 @@
     flex-wrap: wrap;
   }
   .contact-info-container {
-    margin: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: row; /* Align side-by-side */
+    gap: 10px; /* Spacing between icon and text */
   }
-  .contact-info-container p,
-  .nav-links li a {
-    font-size: 1rem;
+  
+  .contact-info-container img {
+    display: block; /* Remove any default inline behavior */
+    width: auto; /* Maintain original image aspect ratio */
+    height: 1.5rem; /* Example fixed height, adjust as necessary */
+  }
+  
+  .contact-info-container p {
+    margin: 0; /* Remove default paragraph margins */
+    display: flex; /* Apply flexbox for vertical centering */
+    align-items: center; /* Center the text vertically */
+    font-size: 1rem; /* Adjust font size as necessary */
   }
   .experience-sub-title {
     font-size: 1.25rem;

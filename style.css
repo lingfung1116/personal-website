@@ -524,18 +524,11 @@ footer p {
     flex-direction: column;
   }
 
-  /* Adjust text sizes for readability on small screens */
-  .timeline-time,
-  .timeline-title,
-  .timeline-subtitle,
-  .timeline-content,
-  .tech-item {
-    font-size: smaller;
-  }
 
   /* Stack tech-stack items vertically on small screens */
   .tech-stack {
     flex-direction: column;
+    margin-bottom: 1rem; /* Add bottom margin to each tech stack container */
   }
 
   /* Adjust button sizes on small screens */
@@ -544,5 +537,40 @@ footer p {
     width: 6rem;
   }
 
-  /* ... additional responsive adjustments ... */
+  /* Center align icons */
+  .socials-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .project-img {
+    margin: 0 auto; /* Center the image */
+  }
+
+  /* Adjust padding for bullet points */
+  .timeline-item ul {
+    padding-left: 1rem; /* Add left padding for bullet points */
+  }
+
+  /* Ensure the bullet points have space */
+  .timeline-item li {
+    margin-bottom: 0.5rem; /* Add bottom margin to each list item */
+  }
+
+  /* Ensure adequate padding around contact icons and text */
+  .contact-info-container,
+  .social-link-text { /* Add padding and margin to icons and associated text */
+    padding: 0.25rem;
+    margin-bottom: 0.5rem; /* Add bottom margin to ensure they don't stick to each other */
+  }
+
+  /* Additional adjustments for contact section spacing */
+  .contact-info-container { /* Stack contact info vertically on smaller screens */
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding-top: 1rem;
+  }
 }
