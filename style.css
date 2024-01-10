@@ -378,15 +378,17 @@ position: relative;
 .tech-stack {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 0.625rem; /* Use rem for consistency */
+  justify-content: center; /* Center align tech stack items */
   margin-top: 1rem;
 }
 
 .tech-item {
-  background-color: #e1e1e1; /* Tech stack item background color */
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 0.9rem;
+  background-color: #e1e1e1;
+  padding: 0.3125rem 0.625rem; /* Use rem for padding */
+  border-radius: 0.3125rem; /* Use rem for border-radius */
+  font-size: 0.9rem; /* Adjust font size if necessary */
+  white-space: nowrap; /* Prevent wrapping of text inside tech items */
 }
 
 
@@ -420,6 +422,7 @@ article {
   display: flex;
   align-items: center; /* Center the items vertically */
   gap: 0.5rem;
+  flex-basis: calc(30% - 2rem);
 }
 
 article .icon {
